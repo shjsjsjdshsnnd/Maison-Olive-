@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Maison Olive — Provençal Olive Oil & Gourmet</title>
+  <meta name="description" content="Maison Olive — small-batch, cold-pressed extra virgin olive oil and Provençal gourmet goods, crafted with care in the South of France." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header" id="top">
+    <nav class="nav container">
+      <a class="brand" href="#top">Maison&nbsp;Olive</a>
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" />
+      <label for="nav-toggle" class="nav-toggle-label" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </label>
+      <ul class="nav-links">
+        <li><a href="#story">Our Story</a></li>
+        <li><a href="#collection">Collection</a></li>
+        <li><a href="#process">Process</a></li>
+        <li><a href="#visit">Visit</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-inner container">
+        <p class="eyebrow">Est. 1924 · Provence, France</p>
+        <h1>The soul of the grove,<br />bottled with care.</h1>
+        <p class="lead">Small-batch, cold-pressed extra virgin olive oil and Provençal gourmet goods — harvested by hand, pressed within hours, never rushed.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#collection">Explore the Collection</a>
+          <a class="btn btn-ghost" href="#story">Our Story</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="story" class="story container">
+      <div class="story-text">
+        <p class="eyebrow">Our Story</p>
+        <h2>Four generations beneath the same silver leaves.</h2>
+        <p>Nestled in the hills between Aix and the sea, our grove has been tended by the same family since 1924. We grow the old varietals — Aglandau, Salonenque, Cayon — and press them the slow way, letting the fruit and the terroir speak for themselves.</p>
+        <p>Every bottle carries the taste of a single harvest: grassy, peppery, alive.</p>
+      </div>
+      <div class="story-stats">
+        <div class="stat"><span class="stat-num">100+</span><span class="stat-label">Years of harvest</span></div>
+        <div class="stat"><span class="stat-num">4h</span><span class="stat-label">Fruit to press</span></div>
+        <div class="stat"><span class="stat-num">3</span><span class="stat-label">Heritage varietals</span></div>
+      </div>
+    </section>
+
+    <section id="collection" class="collection">
+      <div class="container">
+        <p class="eyebrow center">The Collection</p>
+        <h2 class="center">Chosen with intention.</h2>
+        <div class="products">
+          <article class="card">
+            <div class="card-media media-1" aria-hidden="true"></div>
+            <h3>Classique EVOO</h3>
+            <p>Our signature cold-pressed extra virgin — balanced, fruity, everyday luxury.</p>
+            <p class="price">€24 · 500ml</p>
+          </article>
+          <article class="card">
+            <div class="card-media media-2" aria-hidden="true"></div>
+            <h3>Réserve Aglandau</h3>
+            <p>A single-varietal reserve with a bold, peppery finish. Limited harvest.</p>
+            <p class="price">€38 · 500ml</p>
+          </article>
+          <article class="card">
+            <div class="card-media media-3" aria-hidden="true"></div>
+            <h3>Tapenade Noire</h3>
+            <p>Hand-chopped black olive tapenade with capers, thyme, and a whisper of anchovy.</p>
+            <p class="price">€14 · 180g</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="process" class="process">
+      <div class="container process-grid">
+        <div class="process-step"><span class="step-num">01</span><h3>Harvest by hand</h3><p>Picked at optimal ripeness across the cool weeks of late autumn.</p></div>
+        <div class="process-step"><span class="step-num">02</span><h3>Press within hours</h3><p>Cold-extracted below 27°C to protect aroma, polyphenols, and colour.</p></div>
+        <div class="process-step"><span class="step-num">03</span><h3>Rest &amp; settle</h3><p>Naturally decanted in stainless tanks — no filtering shortcuts.</p></div>
+        <div class="process-step"><span class="step-num">04</span><h3>Bottle to order</h3><p>Sealed in dark glass to keep every drop as fresh as the day it was pressed.</p></div>
+      </div>
+    </section>
+
+    <section id="visit" class="visit">
+      <div class="container visit-inner">
+        <div>
+          <p class="eyebrow">Visit the Maison</p>
+          <h2>Come taste the harvest.</h2>
+          <p>Our boutique and tasting room are open to visitors year-round. Walk the grove, sample the season, and take a little of Provence home.</p>
+          <p class="visit-detail">Chemin des Oliviers, 13100 Provence, France<br />Open Tue–Sun · 10h–18h</p>
+        </div>
+        <form class="signup" onsubmit="return false;">
+          <label for="email">Join our harvest list</label>
+          <div class="signup-row">
+            <input type="email" id="email" name="email" placeholder="you@example.com" required />
+            <button class="btn btn-primary" type="submit">Subscribe</button>
+          </div>
+          <p class="signup-note">Seasonal releases and grove news. No spam, ever.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <span class="brand">Maison&nbsp;Olive</span>
+      <p>© <span id="year"></span> Maison Olive · Provence, France</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
